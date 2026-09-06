@@ -29,7 +29,7 @@ function App() {
   return (
     <main className="app">
       <h1 className="app_title">주사위 게임</h1>
-      <p className="app_description">나와 상대방의 주사위를 동시에 던지기</p>
+      {/* <p className="app_description">나와 상대방의 주사위를 동시에 던지기</p> */}
 
       <div className="app_actions">
         <Button text="던지기" onClick={handleRollClick} />
