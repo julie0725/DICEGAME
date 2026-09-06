@@ -21,3 +21,35 @@
   width: 160px;
   height: 160px;
 }
+
+.app_actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  background: #2563eb;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgb(37 99 235 / 22%);
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+.app_results {
+  margin-top: 20px;
+}
+
+.app_result {
+  margin: 6px 0;
+  color: #334155;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
