@@ -1,23 +1,24 @@
-import Dice from "./Dice";
+import Dice, { type DiceColor } from "./Dice";
 
 interface BoardProps {
   name: string;
+  color?: DiceColor;
   gameHistory: number[];
 }
 
 // 기록은 join 사용
 // 총점은 reduce 사용
 // 현재 나온 숫자는 myHistory의 마지막 값 사용
-function Board({ name, gameHistory }: BoardProps) {
+function Board({ name, color = "blue", gameHistory }: BoardProps) {
   const currentNumber = gameHistory[gameHistory.length - 1] ?? 1;
 
   const totalScore = gameHistory.reduce((sum, number) => sum + number, 0);
 
   return (
-    <section className="board">
+    <section className={`board board--${color}`}>
       <h2 className="board_title">{name}</h2>
 
-      <Dice num={currentNumber} />
+      <Dice color={color} num={currentNumber} />
 
       <div className="board_results">
         <p className="board_result">현재 나온 숫자: {currentNumber} </p>
