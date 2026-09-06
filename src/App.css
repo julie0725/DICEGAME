@@ -1,0 +1,23 @@
+.app {
+  width: min(100% - 32px, 900px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 56px 0;
+  text-align: center;
+}
+
+.app_title {
+  margin: 0;
+  color: #172554;
+  font-size: 3rem;
+}
+
+.app_description {
+  margin: 12px 0 32px;
+  color: #64748b;
+}
+
+.dice {
+  width: 160px;
+  height: 160px;
+}
